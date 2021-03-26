@@ -24,4 +24,7 @@ def index(request):
         print(data)
     else:
         data = {}
-    return render(request,"index1.html",data)
+    return render(request, "index.html",data)
+
+
+
