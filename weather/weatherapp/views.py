@@ -19,7 +19,8 @@ def index(request):
             "humidity": str(lis_of_data['main']['humidity']),
             "main": str(lis_of_data['weather'][0]['main']),
             "description" : str(lis_of_data['weather'][0]['description']),
-            "icon": lis_of_data['weather'][0]['icon']
+            "icon": lis_of_data['weather'][0]['icon'],
+            "city": city
         }
         print(data)
     else:
